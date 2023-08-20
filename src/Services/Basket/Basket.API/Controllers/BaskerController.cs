@@ -11,11 +11,11 @@ namespace Basket.API.Controllers
     [Route("api/v1/[controller]")]
     public class BasketController : ControllerBase
     {
-        private readonly IBasketRepository _repository;        
+        private readonly IBasketRepository _repository;
 
         public BasketController(IBasketRepository repository)
         {
-            _repository = repository ?? throw new ArgumentNullException(nameof(repository));            
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         [HttpGet("{userName}", Name = "GetBasket")]
