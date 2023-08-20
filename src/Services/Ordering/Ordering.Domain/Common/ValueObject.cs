@@ -30,6 +30,10 @@ namespace Ordering.Domain.Common
             {
                 return false;
 
+
+
+
+
             }
 
             var other = (ValueObject)obj;
