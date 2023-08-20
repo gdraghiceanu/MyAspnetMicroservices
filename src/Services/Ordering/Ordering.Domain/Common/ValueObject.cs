@@ -29,6 +29,7 @@ namespace Ordering.Domain.Common
             if (obj == null || obj.GetType() != GetType())
             {
                 return false;
+
             }
 
             var other = (ValueObject)obj;
